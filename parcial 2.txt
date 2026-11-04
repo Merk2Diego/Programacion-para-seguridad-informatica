@@ -1,0 +1,14 @@
+
+[int]$proceso= get-proces
+
+[int]$limite = read-host "Introduce número límite"
+
+ if (($proceso -gt $limite) and ($proceso -lt 500)){
+
+		  white-host " se cumplieron las condiciones"
+	} else {
+		  white-host " no se cumplieron las condiciones o al menos una de ellas"
+ }
+
+
+ write-host " la versión es $psversiontable.psversion" 
