@@ -1,0 +1,15 @@
+$usuarios=get-localuser
+
+$Tusuarios=$usuarios.count
+write-host "cantidad de usuarios:" $Tusuarios
+[int]$limite = read-host "ingrese el numero limite: "
+
+if (($Tusuarios -gt $limite) -and ($Tusuarios -lt 10))
+	{
+		write-host " se cumplen ambas condiciones"
+	} else{
+		write-host "no se cumplen una o todas las condiciones"
+	}
+
+Write-Host " Version actual de PowerShell:"
+$PSVersionTable.PSVersion
